@@ -39,7 +39,7 @@ elif DATASET == 'imagenet':
 if MODEL == 'resnet18':
     FEATURE_NAMES = ['layer4']
     if DATASET == 'places365':
-        MODEL_FILE = 'zoo/resnet18_places365.pth.tar'
+        MODEL_FILE = '../pretrained/resnet18_fc_ma_t10.pth'
         MODEL_PARALLEL = True
     elif DATASET == 'imagenet':
         MODEL_FILE = None
