@@ -14,7 +14,7 @@ def loadmodel(hook_fn):
                     'state_dict'].items()}  # the data parallel layer will add 'module' before each layer name
             else:
                 state_dict = checkpoint
-            model.load_state_dict(state_dict)
+            model.load_state_dict(state_dict, strict=False)
         else:
             model = checkpoint
     for name in settings.FEATURE_NAMES:
