@@ -5,11 +5,6 @@ This repository is a light version of [NetDissect](https://github.com/CSAILVisio
 
 
 ## Download
-* Clone the code of Network Dissection Lite from github
-```
-    git clone https://github.com/CSAILVision/NetDissect-Lite
-    cd NetDissect-Lite
-```
 * Download the Broden dataset (~1GB space) and the example pretrained model. If you already download this, you can create a symbolic link to your original dataset.
 ```
     ./script/dlbroden.sh
